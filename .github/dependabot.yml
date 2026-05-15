@@ -6,13 +6,20 @@
 version: 2
 updates:
   - package-ecosystem: "gomod"
-    directories: 
+    directories:
       - "/"
+      - "/catalog/pkg/openapi/"
       - "/clients/ui/bff/"
+      - "/cmd/controller/"
+      - "/cmd/csi/"
+      - "/gorm-gen/"
+      - "/pkg/inferenceservice-controller/"
+      - "/pkg/openapi/"
     schedule:
       interval: "weekly"
   - package-ecosystem: "pip"
     directories:
+      - "/catalog/clients/python/"
       - "/clients/python/"
       - "/jobs/async-upload"
     schedule:
