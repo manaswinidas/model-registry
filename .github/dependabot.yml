@@ -31,3 +31,7 @@ updates:
     directory: "/clients/ui/frontend/"
     schedule:
       interval: "weekly"
+  - package-ecosystem: "npm"
+    directory: "/clients/ui/"
+    schedule:
+      interval: "weekly"
