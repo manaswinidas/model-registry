@@ -83,8 +83,8 @@ const PreviewPanel: React.FC<PreviewPanelProps> = ({ preview, isSourceEnabled })
       error={previewError}
       hasFormChanged={hasFormChanged}
       canPreview={canPreview}
-      onPreview={() => handlePreview()}
-      onLoadMore={() => handleLoadMore()}
+      onPreview={handlePreview}
+      onLoadMore={handleLoadMore}
       onTabChange={handleTabChange}
       previewDisabledTooltip={previewDisabledTooltip}
       renderListItemIcon={renderListItemIcon}
