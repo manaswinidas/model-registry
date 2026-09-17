@@ -130,9 +130,7 @@ const ManageSourceForm: React.FC<ManageSourceFormProps> = ({
 
   return (
     <ManageSourceFormLayout
-      previewPanel={
-        <PreviewPanel preview={preview} isSourceEnabled={formData.enabled} />
-      }
+      previewPanel={<PreviewPanel preview={preview} isSourceEnabled={formData.enabled} />}
       footer={
         <ManageSourceFormFooter
           submitLabel={isEditMode ? 'Save' : 'Add'}
